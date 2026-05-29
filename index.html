@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBistro - Kitchen Display System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>🍳 SmartBistro KDS</h1>
+        <div class="header-info">
+            <span id="current-time"></span>
+            <span>Total Orders: <strong id="total-orders">0</strong></span>
+        </div>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All Orders</button>
+        <button class="filter-btn" data-filter="pending">Pending</button>
+        <button class="filter-btn" data-filter="in_progress">In Progress</button>
+        <button class="filter-btn" data-filter="ready">Ready</button>
+    </div>
+
+    <div class="orders-grid" id="orders-grid">
+        <!-- Orders will be dynamically added here by app.js -->
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
